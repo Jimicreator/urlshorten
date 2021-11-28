@@ -21,7 +21,7 @@ const options = (ctx, btnText, btnUrl) => {
 
 bot.start((ctx) => {
     if(ctx.message.chat.type == 'private'){
-        ctx.replyWithMarkdown(`Hey ${ctx.message.from.first_name}, Welcome ! \nUse /help to get started. Send me a long URL and get it shortened. \n\nMade with ❤ by [𝔄𝔉𝔉𝔄𝔑](https://t.me/AffanTheBest).` ,
+        ctx.replyWithMarkdown(`Hey ${ctx.message.from.first_name}, Welcome ! \nUse /help to get started. Send me a long URL and get it shortened. \n\nMade with ❤ by [Jimi_Bots](https://t.me/Jimi_Bots).` ,
         {
             reply_to_message_id: ctx.update.message.message_id,
             allow_sending_without_reply: true,
@@ -53,7 +53,7 @@ bot.command('donate', async(ctx) => {
         {text: 'Keep Smiling 😀', url: ''},
         {text: 'Be Happy 😁', url: ''}
     ]
-    ctx.replyWithMarkdown('Thanks for showing intrest in donating. Remember every donation matters!\n\nYou can donate me by using following links:\nPaypal: https://paypal.me/affanthebest\nKo-fi - https://ko-fi.com/affanthebest \n\nUPI - `siddiquiaffan201@okaxis`\n\nFor any other methods contact @AffanTheBest personally.',
+    ctx.replyWithMarkdown('Thanks for showing intrest).',
     {  
         reply_to_message_id: ctx.update.message.message_id,
         allow_sending_without_reply: true,
