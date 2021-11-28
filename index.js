@@ -3,8 +3,8 @@ const { Telegraf } = require('telegraf');
 const short = require('./modules/short');
 const unshort = require('./modules/unshort');
 const default_btn = [
-    { text: "Join Channel", url: "https://t.me/asprojects" },
-    { text: "Support Group", url: "https://t.me/assupportchat" },
+    { text: "Join Channel", url: "https://t.me/Jimi_Bots" },
+    { text: "Support Group", url: "https://t.me/jimibots_grp" },
   ];
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
@@ -35,7 +35,7 @@ bot.start((ctx) => {
 });
 bot.help((ctx) => {
     if(ctx.message.chat.type == 'private'){
-        ctx.replyWithMarkdown("To short a big URL just send me the long URL and I'll give shorten link.\n\n/start - Restart the bot. \n/help - Get this message. \n/short - Short Long Urls (Eg `/short https://github.com/AffanTheBest`)\n/unshort - Extract long URL from any shortend URL. (Eg. `/unshort https://cutt.ly/qzXU9A2`). \nType `@AsUrlBot` in chat input to use inline. (Eg. `@AsUrlBot Macbook`)\n\n/donate - Donate to developer." , 
+        ctx.replyWithMarkdown("To short a big URL just send me the long URL and I'll give shorten link.\n\n/start - Restart the bot. \n/help - Get this message. \n/short - Short Long Urls (Eg `/short https://github.com/xyz`)\n/unshort - Extract long URL from any shortend URL. (Eg. `/unshort https://cutt.ly/xxxx`). \nType `@Jim_Bots` in chat input to use inline. (Eg. `@Jimi_Bots Macbook`)\n" , 
         {
             reply_to_message_id: ctx.update.message.message_id,
             allow_sending_without_reply: true,
@@ -50,8 +50,8 @@ bot.help((ctx) => {
 
 bot.command('donate', async(ctx) => {
     const donate_btns = [
-        {text: 'Ko-fi', url: 'https://ko-fi.com/affanthebest'},
-        {text: 'Paypal', url: 'https://paypal.me/affanthebest'}
+        {text: 'Keep Smiling 😀', url: ''},
+        {text: 'Be Happy 😁', url: ''}
     ]
     ctx.replyWithMarkdown('Thanks for showing intrest in donating. Remember every donation matters!\n\nYou can donate me by using following links:\nPaypal: https://paypal.me/affanthebest\nKo-fi - https://ko-fi.com/affanthebest \n\nUPI - `siddiquiaffan201@okaxis`\n\nFor any other methods contact @AffanTheBest personally.',
     {  
